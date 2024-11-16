@@ -34,7 +34,7 @@ jobs:
     - name: Configure prerequisites
       run: |
         # set module information
-        silence_mode=1
+        silence_mode=0
         mkdir build
         echo -e "{\"platform\": \"PLATFORM_ESP32\", \"module\": \"${{ inputs.module_name }}\", \"silence\": ${silence_mode}}" > build/module_info.json
 
